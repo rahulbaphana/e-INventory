@@ -1,0 +1,10 @@
+.idea/*
+.idea
+target/*
+/target
+.class
+*.project
+*.eclipse
+.iml
+*.iml
+*.settings
