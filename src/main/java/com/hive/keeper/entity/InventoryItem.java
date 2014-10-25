@@ -3,16 +3,17 @@ package com.hive.keeper.entity;
 import com.hive.keeper.exception.InventoryException;
 import com.hive.keeper.unit.Units;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class InventoryItem {
+public class InventoryItem implements Serializable {
     private String name;
     private String description;
     private BigDecimal quantity;
     private Units units;
 
     public InventoryItem() {
-        System.out.println("**************This is used just to initialize by spring boot!!");
+        // This is required by spring boot to initialize the request body.
     }
 
     public InventoryItem(String name, String description, BigDecimal quantity, Units units) throws InventoryException {
